@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>我的乐园</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/游乐场.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/背景.css">
+    <link rel="stylesheet" href="css/弹窗.css">
+</head>
+
+<body>
+
+    <!-- start your project here -->
+    <!-- Main navigation -->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
+            <div class="container">
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#">首页</a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#about">关于
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#relevant">相关信息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">项目</a>
+                        </li>
+                        <!-- Dropdown -->
+
+                        <!--  -->
+
+                    </ul>
+                    <!-- Links -->
+
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+                <!-- Collapsible content -->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+        <!--Mask-->
+        <div id="intro" class="view">
+
+            <div class="mask rgba-black-light">
+                <!-- 添加了.container-fluid 容器以利用栅格进行布局 -->
+                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+                    <!-- 新添加的 div, 表示栅格中的行 -->
+                    <div class="row d-flex justify-content-center text-center">
+                        <!-- 新添加的 div, 表示栅格中的列 -->
+                        <div class="col-md-10">
+
+                            <!-- Heading -->
+                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Welcome</h2>
+
+                            <!-- Divider -->
+                            <hr class="hr-light">
+
+                            <!-- Description -->
+                            <h4 class="white-text my-4">欢迎使用掌上乐园系统，我们将为您提供最好的服务。.</h4>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--/.Mask-->
+    </header>
+    <!--Main layout-->
+
+    <!--Main layout-->
+    <main>
+
+        <!-- <a href="./indexb.html" class="example1-fixed" target="_block">地图</a> -->
+
+        <!-- 地图弹窗 -->
+
+        <a id="myBtn" class="example1-fixed white-text">地图</a>
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span id="CLOSE" class="close">&times;</span>
+                <div class="container">
+                    <h2 class="h1-responsive font-weight-bold mb-5">全景地图</h2>
+
+                    <div class="row mb-3">
+                        <div class="col-lg-2">
+                            <br>
+                            <br>
+                            <div class="popup" onclick="myFunction()">地图功能介绍
+                                <span class="popuptext"
+                                    id="myPopup">1.红点处为当前你所在位置<br>2.绿色处为卫生间位置<br>3.蓝色处为搜索内容的位置<br>你可以点击地图中想要游玩的项目，查看相关信息，并且可以选择是否游玩，地图将为你显示路径与方向。</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="grey-text w-responsive mx-auto">通过搜索可在地图上显示蓝色标记,并显示路径</p>
+                            <input class="mr-sm-2" type="text" placeholder="输入关键字">
+                            <input type="submit" value="查找目标位置">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="view overlay z-depth-1-half">
+                                <img src="https://appwk.baidu.com/naapi/doc/view?ih=1310&o=png_6_0_0_120_113_652_472_892.912_1262.833&iw=1812&ix=0&iy=0&aimw=1812&rn=1&doc_id=f47693c50029bd64793e2c09&pn=1&sign=918df0113fd5c38351ecd89bbd8b4193&type=1&app_ver=2.9.8.2&ua=bd_800_800_IncredibleS_2.9.8.2_2.3.7&bid=1&app_ua=IncredibleS&uid=&cuid=&fr=3&Bdi_bear=WIFI&from=3_10000&bduss=&pid=1&screen=800_800&sys_ver=2.3.7"
+                                    class="img-fluid" usemap="#quanjingmap" />
+                                <!-- ================================================ -->
+                                <!-- <div class="mask rgba-white-slight">
+
+                                    <svg width=1100 height=900>
+                                            <rect x=10 y=20 width=100 height=80 stroke=red fill=none />
+                                            <circle cx=120 cy=80 r=40 stroke=red fill=none />
+                                    </svg>
+                                </div> -->
+                                <!-- =================================================== -->
+                                <map name="quanjingmap">
+                                    <area shape="circle" coords="495,210,33" id="myBtna" alt="">
+                                    <div id="myModala" class="modal">
+
+                                        <div class="modal-content2">
+                                            <span id="CLOSEa" class="close">&times;</span>
+
+                                            <div class="card" id="card1">
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-lg-7">
+                                                        <div class="view overlay">
+                                                            <img src="picture/8.jpg" class="card-img-top" alt="">
+                                                            <a href="#!">
+                                                                <div class="mask rgba-white-slight"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">飞天猪</h4>
+                                                            <hr class="hr-dark">
+                                                            <p>排队人数：30</p>
+                                                            <p>排队时间：20</p>
+                                                            <p>所需路程：300</p>
+                                                            <p>路程时间；10</p>
+                                                            <a href="#!" class="btn btn-primary">想玩</a>
+                                                            <a href="#!" class="btn btn-primary">预约</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <area shape="circle" coords="648,198,33" id="myBtnb" alt="">
+                                    <div id="myModalb" class="modal">
+
+                                        <div class="modal-content2">
+                                            <span id="CLOSEb" class="close">&times;</span>
+                                            <div class="card" id="card1">
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-lg-7">
+                                                        <div class="view overlay">
+                                                            <img src="https://th.bing.com/th/id/R23ab999112c8efc7143403dc6033be44?rik=ybXaPl%2b32%2f4xfQ&riu=http%3a%2f%2fseopic.699pic.com%2fphoto%2f50111%2f6762.jpg_wh1200.jpg&ehk=pJJCipXcgMBAx2TmZOsG1zLYqkHgqFGL%2baFae9dsIeo%3d&risl=&pid=ImgRaw" class="card-img-top" alt="">
+                                                            <a href="#!">
+                                                                <div class="mask rgba-white-slight"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">旋转木马</h4>
+                                                            <hr class="hr-dark">
+                                                            <p>排队人数：20</p>
+                                                            <p>排队时间：10</p>
+                                                            <p>所需路程：400</p>
+                                                            <p>路程时间；10</p>
+                                                            <a href="#!" class="btn btn-primary">想玩</a>
+                                                            <a href="#!" class="btn btn-primary">预约</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <area shape="rect" coords="500,250,600,380" id="myBtnc" alt="">
+                                    <div id="myModalc" class="modal">
+
+                                        <div class="modal-content2">
+                                            <span id="CLOSEc" class="close">&times;</span>
+                                            <div class="card" id="card1">
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-lg-7">
+                                                        <div class="view overlay">
+                                                            <img src="picture/1.jpg" class="card-img-top" alt="">
+                                                            <a href="#!">
+                                                                <div class="mask rgba-white-slight"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">魔仙堡</h4>
+                                                            <hr class="hr-dark">
+                                                            <p>排队人数：30</p>
+                                                            <p>排队时间：30</p>
+                                                            <p>所需路程：200</p>
+                                                            <p>路程时间；10</p>
+                                                            <a href="#!" class="btn btn-primary">想玩</a>
+                                                            <a href="#!" class="btn btn-primary">预约</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </map>
+
+                                <!-- <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 选择器弹窗 -->
+        <a id="myBtn2" class="example2-fixed white-text">选择</a>
+        <div id="myModal2" class="modal">
+
+            <div class="modal-content">
+                <span id="CLOSE2" class="close">&times;</span>
+                <!-- Container -->
+                <div class="container">
+
+                    <!-- Section heading -->
+                    <h2 class="h1-responsive font-weight-bold mb-5">选择</h2>
+                    <p class="grey-text w-responsive mx-auto mb-5">
+                        点击“想玩”按钮，可以选择多个你想玩的项目，选择完后点击确认，将在地图上显示一条经过所选择项目的路径；<br>点击“预约”按钮，系统可为你自动排队，同一时间只能预约一个，当预约时间清零或取消预约，可预约下一项目。
+                    </p>
+
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card" id="card1">
+
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="https://p.ssl.qhimg.com/t016f3809ed46c8d66b.jpg" class="card-img-top"
+                                        alt="">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">加勒比海盗</h4>
+                                    <!--Text-->
+                                    <a href="#!" class="btn btn-primary">想玩</a>
+                                    <a href="#!" class="btn btn-primary">预约</a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card" id="card2">
+
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="https://p.ssl.qhimg.com/t0163fe30eb7ab1adfa.jpg" class="card-img-top"
+                                        alt="">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">飞跃地平线</h4>
+                                    <!--Text-->
+                                    <a href="#!" class="btn btn-primary">想玩</a>
+                                    <a href="#!" class="btn btn-primary">预约</a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card" id="card3">
+
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="https://p.ssl.qhimg.com/t019f5655924967560f.jpg" class="card-img-top"
+                                        alt="">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">创极速光轮</h4>
+                                    <!--Text-->
+                                    <a href="#!" class="btn btn-primary">想玩</a>
+                                    <a href="#!" class="btn btn-primary">预约</a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card" id="card4">
+
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="https://img1.qunarzz.com/travel/d5/1703/5e/bb15f3baeea3e3b5.jpg_r_640x426x70_66208344.jpg"
+                                        class="card-img-top" alt="">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">七个小矮人矿山车</h4>
+                                    <!--Text-->
+                                    <a href="#!" class="btn btn-primary">想玩</a>
+                                    <a href="#!" class="btn btn-primary">预约</a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card" id="card5">
+
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="http://img95.699pic.com/photo/50057/5923.jpg_wh860.jpg"
+                                        class="card-img-top" alt="">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">爱丽丝梦游仙境迷宫</h4>
+                                    <!--Text-->
+                                    <a href="#!" class="btn btn-primary">想玩</a>
+                                    <a href="#!" class="btn btn-primary">预约</a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card" id="card6">
+
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="http://pic.lvmama.com/uploads/pc/place2/2017-02-16/77242a3d-82fc-4483-9885-fcd8629db64d_555_370.jpg"
+                                        class="card-img-top" alt="">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">幻想曲旋转木马</h4>
+                                    <!--Text-->
+                                    <a href="#!" class="btn btn-primary">想玩</a>
+                                    <a href="#!" class="btn btn-primary">预约</a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" type="button"
+                        onclick="alert('选择成功，在地图上将按照选择的想玩顺序给出路线')">确定(按照点击顺序)</button>
+                    <button class="btn-primary" type="button" onclick="alert('选择成功，在地图上将给出最方便的路线')">确定(不按照点击顺序)</button>
+                    <button class="btn-primary" type="button" onclick="alert('取消预约成功，你可以预约其他项目!')">取消预约</button>
+
+                </div>
+                <!-- Container -->
+            </div>
+
+        </div>
+
+
+
+        <!--Section: relevant-->
+        <section id="relevant" class="text-center py-5" style="background-color: #eee;">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5">相关信息</h2>
+
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-11">
+                        <!--Carousel Wrapper1-->
+                        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-2" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-2" data-slide-to="4"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-10">
+                                            <div class="view">
+                                                <img class="d-block w-100"
+                                                    src="https://p.ssl.qhimg.com/t0163fe30eb7ab1adfa.jpg"
+                                                    alt="First slide">
+                                                <div class="mask rgba-black-slight"></div>
+                                            </div>
+                                            <div class="carousel-caption">
+                                                <h2 class="h3-responsive">飞越地平线</h2>
+                                                <p>位于上海迪士尼乐园“冒险岛”的主题区域。上海的冒险岛区域内是以恐龙为主题的快速设施“Roaring
+                                                    Rapids”，以及以美国迪士尼乐园内“飞越加州”为蓝本的新设施“飞越地平线”。</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div id="pic1" class="containet">
+                                                <h2 class="h3-responsive">飞越地平线</h2>
+                                                <hr class="hr-dark">
+                                                <p>排队人数：50</p>
+                                                <p>排队时间：20</p>
+                                                <p>所需路程：200m</p>
+                                                <p>路程时间：2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Mask color-->
+                                    <div class="row">
+                                        <div class="col-lg-10">
+                                            <div class="view">
+                                                <img class="d-block w-100"
+                                                    src="https://p.ssl.qhimg.com/t016f3809ed46c8d66b.jpg"
+                                                    alt="Second slide">
+                                                <div class="mask rgba-black-slight"></div>
+                                            </div>
+                                            <div class="carousel-caption">
+                                                <h2 class="h3-responsive">加勒比海盗</h2>
+                                                <p>《加勒比海盗》是上海迪士尼神奇王国主题乐园中第一个被确定的园区主题，该园区被命名为“宝藏湾”。内容是呈现深受观众喜爱的系列电影《加勒比海盗》中的故事和角色，运用众多新颖独特的特效和技术，带领游客来到海洋深处，穿过海盗战舰，直击激烈海战。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div id="pic2" class="containet">
+                                                <h2 class="h3-responsive">加勒比海盗</h2>
+                                                <hr class="hr-dark">
+                                                <p>排队人数：30</p>
+                                                <p>排队时间：20</p>
+                                                <p>所需路程：50</p>
+                                                <p>路程时间；2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Mask color-->
+                                    <div class="row">
+                                        <div class="col-lg-10">
+                                            <div class="view">
+                                                <img class="d-block w-100"
+                                                    src="https://p.ssl.qhimg.com/t019f5655924967560f.jpg"
+                                                    alt="Third slide">
+                                                <div class="mask rgba-black-slight"></div>
+                                            </div>
+                                            <div class="carousel-caption">
+                                                <h2 class="h3-responsive">创极速光轮</h2>
+                                                <p>随着“创极速光轮”的全球首发，“明日世界”园区将展现迪士尼电影《创：战纪》所描绘的未来世界。乘着两轮式极速光轮，游客们将在壮丽穹顶下的轨道飞驰而过，高速进入由多彩灯光、投影和音效营造出虚实莫辨的幻想空间。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div id="pic3" class="containet">
+                                                <h2 class="h3-responsive">创极速光轮</h2>
+                                                <hr class="hr-dark">
+                                                <p>排队人数：40</p>
+                                                <p>排队时间：30</p>
+                                                <p>所需路程：700</p>
+                                                <p>路程时间；10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Mask color-->
+                                    <div class="row">
+                                        <div class="col-lg-10">
+                                            <div class="view">
+                                                <img class="d-block w-100"
+                                                    src="https://img1.qunarzz.com/travel/d5/1703/5e/bb15f3baeea3e3b5.jpg_r_640x426x70_66208344.jpg"
+                                                    alt="Forth slide">
+                                                <div class="mask rgba-black-slight"></div>
+                                            </div>
+                                            <div class="carousel-caption">
+                                                <h2 class="h3-responsive">七个小矮人矿山车</h2>
+                                                <p>这是乐园里仅次于创极速光轮的第二刺激项目，它的灵感源自华特迪士尼经典动画《白雪公主和七个小矮人》，是适合全家人共同体验的过山车项目。在七个小矮人的矿洞里，飞速的急坠和冲刺，整个体验是半室内半室外结合，景观环境漂亮而逼真，非常刺激。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div id="pic4" class="containet">
+                                                <h2 class="h3-responsive">七个小矮人矿山车</h2>
+                                                <hr class="hr-dark">
+                                                <p>排队人数：35</p>
+                                                <p>排队时间：20</p>
+                                                <p>所需路程：400</p>
+                                                <p>路程时间；5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <!--Mask color-->
+                                    <div class="row">
+                                        <div class="col-lg-10">
+                                            <div class="view">
+                                                <img class="d-block w-100"
+                                                    src="http://img95.699pic.com/photo/50057/5923.jpg_wh860.jpg"
+                                                    alt="Forth slide">
+                                                <div class="mask rgba-black-slight"></div>
+                                            </div>
+                                            <div class="carousel-caption">
+                                                <h2 class="h3-responsive">爱丽丝梦游仙境迷宫</h2>
+                                                <p>在这里像是置身童话世界，一入内会被红桃皇后的表情所震慑，花园里那一扇扇小门，推开的时候还会对你说话。里面还有“哈哈镜”，特别适合爱拍照的宝宝。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div id="pic5" class="containet">
+                                                <h2 class="h3-responsive">爱丽丝梦游仙境迷宫</h2>
+                                                <hr class="hr-dark">
+                                                <p>排队人数：30</p>
+                                                <p>排队时间：15</p>
+                                                <p>所需路程：1000</p>
+                                                <p>路程时间；12</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+                        </div>
+                        <!--/.Carousel Wrapper1-->
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: relevant-->
+
+        <!-- project -->
+        <section id="projects" class="text-center py-5">
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold my-5">招牌项目</h2>
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!--Carousel Wrapper-->
+                <div id="multi-item-example" class="carousel testimonial-carousel slide carousel-multi-item mb-5"
+                    data-ride="carousel">
+
+                    <!--Controls-->
+                    <div class="controls-top">
+                        <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="prev"><i
+                                class="fas fa-chevron-left"></i></a>
+                        <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="next"><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <!--Controls-->
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active light-blue darken-4"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1" class="light-blue darken-4"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2" class="light-blue darken-4"></li>
+                    </ol>
+                    <!--Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="testimonial">
+                                    <div class="view overlay z-depth-1-half">
+                                        <img src="picture/8.jpg" class="img-fluid">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <h4 class="my-4 font-weight-bold">飞天猪</h4>
+                                    <div class="amber-text">
+                                        <i class="black-text">热门指数:</i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="far fa-star"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6 clearfix d-none d-md-block">
+                                <div class="testimonial">
+                                    <div class="view overlay z-depth-1-half">
+                                        <img src="picture/7.jpg" class="img-fluid">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <h4 class="my-4 font-weight-bold">漂流船</h4>
+                                    <div class="amber-text">
+                                        <i class="black-text">热门指数:</i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+
+
+                        </div>
+                        <!--First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="testimonial">
+                                    <div class="view overlay z-depth-1-half">
+                                        <img src="picture/11.jpg" class="img-fluid">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <h4 class="my-4 font-weight-bold">过山车</h4>
+                                    <div class="amber-text">
+                                        <i class="black-text">热门指数:</i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6 clearfix d-none d-md-block">
+                                <div class="testimonial">
+                                    <div class="view overlay z-depth-1-half">
+                                        <img src="picture/9.jpg" class="img-fluid">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <h4 class="my-4 font-weight-bold">水上乐园</h4>
+                                    <div class="amber-text">
+                                        <i class="black-text">热门指数:</i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star-half-alt"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+
+
+                        </div>
+                        <!--Second slide-->
+
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="testimonial">
+                                    <div class="view overlay z-depth-1-half">
+                                        <img src="picture/10.jpg" class="img-fluid">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <h4 class="my-4 font-weight-bold">海盗船</h4>
+                                    <div class="amber-text">
+                                        <i class="black-text">热门指数:</i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star-half-alt"> </i>
+                                        <i class="far fa-star"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6 clearfix d-none d-md-block">
+                                <div class="testimonial">
+                                    <div class="view overlay z-depth-1-half">
+                                        <img src="picture/3.jpg" class="img-fluid">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <h4 class="my-4 font-weight-bold">摩天轮</h4>
+                                    <div class="amber-text">
+                                        <i class="black-text">热门指数:</i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"> </i>
+                                        <i class="far fa-star"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+
+
+                        </div>
+                        <!--Third slide-->
+
+                    </div>
+                    <!--Slides-->
+
+                </div>
+                <!--Carousel Wrapper-->
+
+            </div>
+            <!-- Grid row -->
+        </section>
+
+        <!--Section: contact-->
+        <section id="contact" class="py-5" style="background-color: #eee;">
+
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact us</h2>
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                    quisquam eum
+                    porro a pariatur veniam.</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-9 mb-md-0 mb-5">
+
+                        <form>
+
+                            <!-- Grid row -->
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="contact-name" class="form-control">
+                                        <label for="contact-name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="contact-email" class="form-control">
+                                        <label for="contact-email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Grid row -->
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="contact-Subject" class="form-control">
+                                        <label for="contact-Subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Grid row -->
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea type="text" id="contact-message" class="form-control md-textarea"
+                                            rows="2"></textarea>
+                                        <label for="contact-message">Your message</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-indigo btn-md">Send</a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <i class="fas fa-map-marker-alt fa-2x indigo-text"></i>
+                                <p>ChongQing, NanAn, China</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone fa-2x mt-4 indigo-text"></i>
+                                <p>+ 01 234 567 89</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope fa-2x mt-4 indigo-text"></i>
+                                <p class="mb-0">contact@example.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+        </section>
+        <!--Section: contact-->
+
+
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- end your project here -->
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+        // Carousel options
+        $('#carousel-example-2').carousel({
+            interval: 1000, // 间隔时间, 默认5000毫秒, 如果设置为false则不会自动播放
+            pause: ture,   // 鼠标移上后是否暂停, 默认暂停
+            wrap: ture,    // 是否循环轮播, 默认循环
+        })
+    </script>
+    <!-- 弹窗 -->
+    <script type="text/javascript" src="js/弹窗.js"></script>
+</body>
+
+</html
